@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Pizza Maker</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/index.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome!</h1>
+            <h2>Please fill out your order below</h2>
+        </header>
+        <main>
+            <form id="newPizza" action="">
+                <h3>Build your own Pizza</h3>
+                <div class="field">
+                    <label for="size">Size</label>
+                    <input type="text" id="size" name="size" placeholder="Small, Medium, or Large">
+                </div>
+                <div class="field">
+                    <legend>Crust</legend>
+                    <input type="radio" name="crust" id="pan" value="pan" checked />
+                    <label for="pan">Pan</label>
+                    <input type="radio" name="crust" id="thin" value="thin" />
+                    <label for="thin">Thin Crust</label>
+                    <input type="radio" name="crust" id="deepdish" value="deepdish" />
+                    <label for="deepdish">Deep Dish</label>
+                </div>
+                <div class="field">
+                    <legend>Toppings</legend>
+                    <input type="checkbox" name="toppings[]" id="topping1" value="pepperoni">
+                    <label for="topping1">Pepperoni</label>
+                    <input type="checkbox" name="toppings[]" id="topping2" value="bellpeppers">
+                    <label for="topping2">Bell Peppers</label>
+                    <input type="checkbox" name="toppings[]" id="topping3" value="mushrooms">
+                    <label for="topping3">Mushrooms</label>
+                    <input type="checkbox" name="toppings[]" id="topping4" value="bacon">
+                    <label for="topping4">Bacon</label>
+                    <input type="checkbox" name="toppings[]" id="topping5" value="chicken">
+                    <label for="topping5">Chicken</label>
+                    <input type="checkbox" name="toppings[]" id="topping6" value="mushrooms">
+                    <label for="topping6">Mushrooms</label>
+                    <input type="checkbox" name="toppings[]" id="topping7" value="olives">
+                    <label for="topping7">Olives</label>
+                </div>
+                <button type="reset">Clear Options</button>
+            </form>
+            <button id="buttonSubmit">Order</button>
+            <div id="output">
+                <p id="outputtext"></p>
+            </div>
+        </main>
+        <footer>
+            <p id="student"></p>
+        </footer>
+    </body>
+</html>
